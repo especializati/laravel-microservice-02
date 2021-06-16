@@ -19,8 +19,6 @@ class CompanyService
 
     public function getCompany(string $company)
     {
-        $request = $this->request('get', "/companies/{$company}");
-
-        dd($request->body());
+        return $this->request('get', "/companies/{$company}");
     }
 }
