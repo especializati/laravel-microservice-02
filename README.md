@@ -1,70 +1,10 @@
-# Curso Laravel Microservices com RabbitMQ (micro 02)
-[Saiba Mais Sobre o Curso](https://academy.especializati.com.br/curso/laravel-microservices-micro-02)
+# Curso Laravel Microservices - Micro 02
 
-## Requisitos
-Este microservice 02 depende do microservice 01, portanto, primeiramente subir o [microservice 01](https://github.com/especializati/laravel-microservice-01)
+Nesse segundo curso vamos criar um segundo microsserviço (micro 02) que irá comunicar com outro microsserviço usando o RabbitMQ
 
-### Instalação
-Clonar Projeto
-```sh
-git clone https://github.com/especializati/laravel-microservice-02.git
-```
+- :movie_camera: [Acesse o Curso](https://academy.especializati.com.br/curso/laravel-microservices-micro-02).
 
-Acessar o projeto
-```sh
-cd laravel-microservice-02
-```
 
-Criar o Arquivo .env
-```sh
-cp .env.example .env
-```
+Links Úteis:
 
-Atualizar as variáveis de ambiente do arquivo .env
-```dosini
-APP_NAME=EspecializaTi
-APP_URL=http://localhost:8001
-
-DB_CONNECTION=mysql
-DB_HOST=db_micro_02
-DB_PORT=3306
-DB_DATABASE=micro_02
-DB_USERNAME=root
-DB_PASSWORD=root
-
-CACHE_DRIVER=redis
-QUEUE_CONNECTION=redis
-SESSION_DRIVER=redis
-
-REDIS_HOST=redis
-REDIS_PASSWORD=null
-REDIS_PORT=6379
-```
-
-Subir os containers do projeto
-```sh
-docker-compose up -d
-```
-
-Acessar o container
-```sh
-docker-compose exec micro_02 bash
-```
-
-Instalar as dependências do projeto
-```sh
-composer install
-```
-
-Gerar a key do projeto Laravel
-```sh
-php artisan key:generate
-```
-
-Rodar os testes
-```sh
-php artisan test
-```
-
-Acessar o projeto
-[http://localhost:8001](http://localhost:8001)
+- :tada: [Saiba Mais](https://linktr.ee/especializati)
